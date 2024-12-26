@@ -17,7 +17,7 @@ const monthlyAnalysisSentences = {
      "đạt mức <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự tăng trưởng vững chắc.", 
      "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, vẫn duy trì được thị phần ổn định." 
     ], 
-     // Các mẫu câu cho các tháng khác (ví dụ: tháng 2, 3, ...) 
+
   2: [ 
     "chiếm <b>{percentage}%</b> tổng số bán hàng của tháng này, tạo ra một kỷ lục mới.", 
     "với doanh số chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một thành tích nổi bật.", 
@@ -30,11 +30,58 @@ const monthlyAnalysisSentences = {
     "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, giữ vững thị phần quan trọng.", 
     "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã có một tháng rất thành công." 
   ], 
-  // Thêm các mẫu câu cho các tháng tiếp theo... 
-  3: [ "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, một thành công nổi bật.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, tạo ra một dấu ấn quan trọng.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã vượt qua các đối thủ.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, khẳng định vị trí của mình.", "đạt mức <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự phát triển bền vững.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã đạt được một cột mốc mới.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, một kết quả ấn tượng.", "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, chứng tỏ sức mạnh của mình.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã ghi dấu ấn trên thị trường.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một kết quả rất khả quan." ],
-  4: [ "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã có một tháng bứt phá.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự tăng trưởng mạnh mẽ.", "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, một kết quả rất ấn tượng.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã vượt qua nhiều đối thủ.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, tạo ra một cột mốc mới.", "đạt mức <b>{percentage}%</b> tổng số bán hàng tháng này, khẳng định vị thế của mình.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã có một tháng rất thành công.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một kết quả rất khả quan.", "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự phát triển bền vững.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã ghi dấu ấn quan trọng." ], 
-  5: [ "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, tạo ra một kỷ lục mới.", "với doanh số chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một thành tích nổi bật.", "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã khẳng định vị thế của mình.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, một con số rất ấn tượng.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một cột mốc đáng nhớ.", "đạt mức <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã vượt qua nhiều đối thủ.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự phát triển mạnh mẽ.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, một kết quả rất khả quan.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, giữ vững thị phần quan trọng.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã có một tháng rất thành công." ], 
-  6: [ "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, một thành công nổi bật.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, tạo ra một dấu ấn quan trọng.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã vượt qua các đối thủ.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, khẳng định vị trí của mình.", "đạt mức <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự phát triển bền vững.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã đạt được một cột mốc mới.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, một kết quả ấn tượng.", "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, chứng tỏ sức mạnh của mình.", "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã ghi dấu ấn trên thị trường.", "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một kết quả rất khả quan." ],
+
+  3: [ 
+    "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, một thành công nổi bật.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, tạo ra một dấu ấn quan trọng.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã vượt qua các đối thủ.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, khẳng định vị trí của mình.", 
+    "đạt mức <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự phát triển bền vững.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã đạt được một cột mốc mới.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, một kết quả ấn tượng.", 
+    "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, chứng tỏ sức mạnh của mình.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã ghi dấu ấn trên thị trường.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một kết quả rất khả quan." 
+  ],
+
+  4: [
+     "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã có một tháng bứt phá.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự tăng trưởng mạnh mẽ.", 
+    "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, một kết quả rất ấn tượng.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã vượt qua nhiều đối thủ.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, tạo ra một cột mốc mới.", 
+    "đạt mức <b>{percentage}%</b> tổng số bán hàng tháng này, khẳng định vị thế của mình.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã có một tháng rất thành công.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một kết quả rất khả quan.", 
+    "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự phát triển bền vững.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã ghi dấu ấn quan trọng." 
+  ],
+
+  5: [ 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, tạo ra một kỷ lục mới.", 
+    "với doanh số chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một thành tích nổi bật.", 
+    "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã khẳng định vị thế của mình.",
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, một con số rất ấn tượng.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một cột mốc đáng nhớ.", 
+    "đạt mức <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã vượt qua nhiều đối thủ.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự phát triển mạnh mẽ.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, một kết quả rất khả quan.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, giữ vững thị phần quan trọng.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã có một tháng rất thành công." 
+  ], 
+
+  6: [ 
+    "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, một thành công nổi bật.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, tạo ra một dấu ấn quan trọng.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã vượt qua các đối thủ.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, khẳng định vị trí của mình.", 
+    "đạt mức <b>{percentage}%</b> tổng số bán hàng tháng này, thể hiện sự phát triển bền vững.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã đạt được một cột mốc mới.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, một kết quả ấn tượng.", 
+    "đạt <b>{percentage}%</b> tổng số bán hàng tháng này, chứng tỏ sức mạnh của mình.", 
+    "với <b>{percentage}%</b> tổng số bán hàng tháng này, công ty này đã ghi dấu ấn trên thị trường.", 
+    "chiếm <b>{percentage}%</b> tổng số bán hàng tháng này, đây là một kết quả rất khả quan." 
+  ],
   };
   // Hàm tính phần trăm và hiển thị chi tiết 
 function calculateAndDisplayDetails(data, month) { 
@@ -55,6 +102,7 @@ function calculateAndDisplayDetails(data, month) {
     const highestSaleItem = top10Data.reduce((max, item) => max.totalsale > item.totalsale ? max : item); 
     const lowestSaleItem = top10Data.reduce((min, item) => min.totalsale < item.totalsale ? min : item); 
     const summaryItem = document.createElement('li'); 
+    summaryItem.classList.add('summary-item'); // Thêm lớp CSS
     summaryItem.innerHTML = ` 
     <b>Nhìn chung:</b> Tổng số bán hàng tháng này là <b>${totalSales}</b>. 
     <br> <b>${highestSaleItem.company}</b> dẫn đầu với <b>${highestSaleItem.totalsale}</b>, 

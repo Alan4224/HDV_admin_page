@@ -31,8 +31,9 @@ function calculateAndDisplayFuelDetails(data, hiddenIndices) {
     const highestSaleItem = visibleData.reduce((max, item) => max.totalSale > item.totalSale ? max : item); 
     const lowestSaleItem = visibleData.reduce((min, item) => min.totalSale < item.totalSale ? min : item); 
     const summaryItem = document.createElement('li'); 
+    summaryItem.classList.add('summary-item'); // Thêm lớp CSS
     summaryItem.innerHTML = ` 
-    <b>Nhìn chung:</b> Tổng số xe bán được là ${totalSales}. <br> 
+    <b>Nhìn chung:</b> Tổng số xe bán được là <b>${totalSales}</b>. <br> 
     <b>${highestSaleItem.fuelType}</b> dẫn đầu với <b>${highestSaleItem.totalSale}</b> xe, 
     chiếm tỷ lệ <b>cao nhất</b>. <br> 
     Ngược lại, <b>${lowestSaleItem.fuelType}</b> có doanh số <b>thấp nhất</b> là <b>${lowestSaleItem.totalSale}</b> xe. `; 

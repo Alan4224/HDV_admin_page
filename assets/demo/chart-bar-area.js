@@ -13,7 +13,7 @@ function calculateAndDisplayDetail(data) {
   let i =0;
   data.forEach(item => { const totalSales = item.data.find(d => d.region === "TotalSale").sales; // Tạo phần tử li cho mỗi loại xe 
   const listItem = document.createElement('li'); 
-  let detailText = `<b>${item.companyAndName} bán chạy ${rank[i]}:</b>`;
+  let detailText = `<b>${item.companyAndName} bán chạy thứ ${rank[i]}:</b>`;
   i+=1; 
   regions.forEach(region => { 
     const regionData = item.data.find(d => d.region === region.key); 
